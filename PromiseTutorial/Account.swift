@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  account.swift
 //  PromiseTutorial
 //
 //  Created by Evan Tsai on 26/9/18.
@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
-
+struct Account: Decodable{
+    let accountName: String
+    let password: String
+}
