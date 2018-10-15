@@ -1,16 +1,18 @@
 //
-//  ViewModel.swift
+//  LoginViewModel.swift
 //  PromiseTutorial
 //
-//  Created by Evan Tsai on 26/9/18.
-//  Copyright © 2018 Evan Tsai. All rights reserved.
+//  Created by EvanTsai on 2018/10/15.
+//  Copyright © 2018年 Evan Tsai. All rights reserved.
 //
 
 import Foundation
 import PromiseKit
-class ViewModel {
+
+class LoginViewModel {
     
-    func validate(_ account: String, _ password: String) -> Promise<Bool> {
+    
+    func validate(_ account: String?, _ password: String?) -> Promise<Bool> {
         
         return Promise<Bool> { resolver in
             do {
@@ -21,7 +23,11 @@ class ViewModel {
         }
     }
     
-    private func passwordForAccount(_ accountName: String) throws -> String {
+    private func passwordForAccount(_ accountName: String?) throws -> String {
+        
+        guard let accountName = accountName else {
+            throw LoginError.InvalidCredentialFileFormat
+        }
         
         if let path = Bundle.main.path(forResource: "accounts", ofType: "json"),
             let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {

@@ -8,29 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		204D124B215B514B00CC420B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204D124A215B514B00CC420B /* AppDelegate.swift */; };
-		204D124D215B514B00CC420B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204D124C215B514B00CC420B /* ViewController.swift */; };
+		204D124D215B514B00CC420B /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204D124C215B514B00CC420B /* ContentViewController.swift */; };
 		204D1250215B514B00CC420B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204D124E215B514B00CC420B /* Main.storyboard */; };
 		204D1252215B514B00CC420B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204D1251215B514B00CC420B /* Assets.xcassets */; };
 		204D1255215B514B00CC420B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204D1253215B514B00CC420B /* LaunchScreen.storyboard */; };
 		204D125A215B515200CC420B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6ADF5215B35D500E11916 /* Account.swift */; };
 		204D125B215B515200CC420B /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C6ADF7215B3DD200E11916 /* LoginError.swift */; };
 		204D125C215B515F00CC420B /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 20C6ADF0215B33D600E11916 /* accounts.json */; };
-		208C6896215B52F0000420FE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208C6895215B52F0000420FE /* ViewModel.swift */; };
+		208C6896215B52F0000420FE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208C6895215B52F0000420FE /* ContentViewModel.swift */; };
+		20D5A9E921744ED60062A62F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5A9E821744ED60062A62F /* LoginViewController.swift */; };
+		20EEE3E421747FC700CAF6E5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EEE3E321747FC700CAF6E5 /* LoginViewModel.swift */; };
 		427EDF425A74F1EAA0255878 /* Pods_PromiseTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19D7B50CCC5949BF03158D6 /* Pods_PromiseTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		204D1248215B514B00CC420B /* PromiseTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromiseTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		204D124A215B514B00CC420B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		204D124C215B514B00CC420B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		204D124C215B514B00CC420B /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		204D124F215B514B00CC420B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		204D1251215B514B00CC420B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204D1254215B514B00CC420B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204D1256215B514B00CC420B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		208C6895215B52F0000420FE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		208C6895215B52F0000420FE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		20C6ADF0215B33D600E11916 /* accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		20C6ADF5215B35D500E11916 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		20C6ADF7215B3DD200E11916 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		20D5A9E821744ED60062A62F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		20EEE3E321747FC700CAF6E5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7A3CA279D6587FA1D94628AB /* Pods-PromiseTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromiseTutorial/Pods-PromiseTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		8A6DEC36E2F7C42C8B6227A4 /* Pods-PromiseTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromiseTutorial/Pods-PromiseTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		F19D7B50CCC5949BF03158D6 /* Pods_PromiseTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromiseTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,16 +55,13 @@
 		204D1249215B514B00CC420B /* PromiseTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				20C6ADF0215B33D600E11916 /* accounts.json */,
-				20C6ADF5215B35D500E11916 /* Account.swift */,
-				20C6ADF7215B3DD200E11916 /* LoginError.swift */,
 				204D124A215B514B00CC420B /* AppDelegate.swift */,
-				204D124C215B514B00CC420B /* ViewController.swift */,
-				208C6895215B52F0000420FE /* ViewModel.swift */,
-				204D124E215B514B00CC420B /* Main.storyboard */,
 				204D1251215B514B00CC420B /* Assets.xcassets */,
-				204D1253215B514B00CC420B /* LaunchScreen.storyboard */,
 				204D1256215B514B00CC420B /* Info.plist */,
+				204D1253215B514B00CC420B /* LaunchScreen.storyboard */,
+				204D124E215B514B00CC420B /* Main.storyboard */,
+				20D5A9E421744E7D0062A62F /* Model */,
+				20D5A9E221744E5E0062A62F /* UI */,
 			);
 			path = PromiseTutorial;
 			sourceTree = "<group>";
@@ -81,6 +82,59 @@
 				204D1248215B514B00CC420B /* PromiseTutorial.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		20D5A9E221744E5E0062A62F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				20D5A9E721744EB00062A62F /* DynamicTable */,
+				20D5A9E621744EA60062A62F /* LoginWorkflow */,
+				20D5A9E321744E6F0062A62F /* MainContent */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		20D5A9E321744E6F0062A62F /* MainContent */ = {
+			isa = PBXGroup;
+			children = (
+				204D124C215B514B00CC420B /* ContentViewController.swift */,
+				208C6895215B52F0000420FE /* ContentViewModel.swift */,
+			);
+			path = MainContent;
+			sourceTree = "<group>";
+		};
+		20D5A9E421744E7D0062A62F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20D5A9E521744E8E0062A62F /* LoginWorkflow */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20D5A9E521744E8E0062A62F /* LoginWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				20C6ADF0215B33D600E11916 /* accounts.json */,
+				20C6ADF5215B35D500E11916 /* Account.swift */,
+				20C6ADF7215B3DD200E11916 /* LoginError.swift */,
+			);
+			path = LoginWorkflow;
+			sourceTree = "<group>";
+		};
+		20D5A9E621744EA60062A62F /* LoginWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				20D5A9E821744ED60062A62F /* LoginViewController.swift */,
+				20EEE3E321747FC700CAF6E5 /* LoginViewModel.swift */,
+			);
+			path = LoginWorkflow;
+			sourceTree = "<group>";
+		};
+		20D5A9E721744EB00062A62F /* DynamicTable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DynamicTable;
 			sourceTree = "<group>";
 		};
 		5041A8179DB6E1E3DEE589E9 /* Frameworks */ = {
@@ -175,17 +229,23 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PromiseTutorial/Pods-PromiseTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LocalizationKit/LocalizationKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocalizationKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -197,15 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PromiseTutorial-checkManifestLockResult.txt",
 			);
@@ -221,11 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208C6896215B52F0000420FE /* ViewModel.swift in Sources */,
-				204D124D215B514B00CC420B /* ViewController.swift in Sources */,
+				20D5A9E921744ED60062A62F /* LoginViewController.swift in Sources */,
+				208C6896215B52F0000420FE /* ContentViewModel.swift in Sources */,
+				204D124D215B514B00CC420B /* ContentViewController.swift in Sources */,
 				204D124B215B514B00CC420B /* AppDelegate.swift in Sources */,
 				204D125B215B515200CC420B /* LoginError.swift in Sources */,
 				204D125A215B515200CC420B /* Account.swift in Sources */,
+				20EEE3E421747FC700CAF6E5 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,41 @@
 PODS:
-  - PromiseKit/CorePromise (6.4.0)
+  - Alamofire (4.7.3)
+  - LocalizationKit (4.0.5):
+    - LocalizationKit/Core (= 4.0.5)
+    - Socket.IO-Client-Swift (~> 13.1.0)
+  - LocalizationKit/Core (4.0.5):
+    - Socket.IO-Client-Swift (~> 13.1.0)
+  - PromiseKit/Alamofire (6.4.1):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.4.1)
+  - SnapKit (4.0.1)
+  - Socket.IO-Client-Swift (13.1.3):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
 
 DEPENDENCIES:
-  - PromiseKit/CorePromise (~> 6.4.0)
+  - LocalizationKit (~> 4.0.3)
+  - PromiseKit/Alamofire
+  - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - LocalizationKit
     - PromiseKit
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
 
 SPEC CHECKSUMS:
-  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  LocalizationKit: 16be5d7a635c9e6853ed0d4758574c757f4bb0ec
+  PromiseKit: 4c76a6506638034e3d7bede97b2ff7743f7bd2dc
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Socket.IO-Client-Swift: d30d6fd08a38ad2a182b090936a043bf512ab2de
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
 
-PODFILE CHECKSUM: 9f6903897a17f91d68db2e64ab502317b6cbfa24
+PODFILE CHECKSUM: 65aec5bad5f12154b38599b4887ad32b70e3815a
 
 COCOAPODS: 1.5.3

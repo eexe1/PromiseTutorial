@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalizationKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Localization.start(appKey: "98a0db47-95a4-4f8f-b619-d5654d418b95", live: true)
         return true
     }
 
