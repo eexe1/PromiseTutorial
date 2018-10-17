@@ -62,7 +62,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-cH-OGE">
                                 <rect key="frame" x="67" y="358" width="241" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="JID-6H-45p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="JID-6H-45p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,7 +70,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7CX-aC-yYS">
                                 <rect key="frame" x="67" y="382" width="241" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="vcN-RL-wqO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="vcN-RL-wqO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>

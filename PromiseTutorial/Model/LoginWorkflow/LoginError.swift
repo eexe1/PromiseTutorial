@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LoginError: Error {
+enum LoginError: String, Error {
     case CredentialFileNotFound
     case InvalidCredentialFileFormat
     case AccountNameNotFound

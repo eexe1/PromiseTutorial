@@ -28,15 +28,30 @@ class LoginViewController: UIViewController {
     @IBAction func submitForm(_ sender: Any) {
         
         firstly {
-            viewModel.validate(emailField.text, pwdField.text)
-            }.done { success in
-                if success {
-                    print("Logged In")
-                } else {
-                    print("Wrong Password")
+                Promise<Bool> { resolver in
+                    let hasValue = (self.emailField.text?.count != 0 && self.pwdField.text?.count != 0)
+                    resolver.fulfill(hasValue)
                 }
-            }.catch { error in
-                print(error)
+            }.then { [unowned self] hasValue -> Promise<Bool> in
+                if hasValue {
+                    return self.viewModel.validate(self.emailField.text, self.pwdField.text)
+                } else {
+                    return Promise<Bool> {
+                        $0.reject(LoginError.InvalidCredentialFileFormat)
+                    }
+                }
+            }.done { [weak self] success in
+                if success {
+                    self?.showAlert(with: Localization.get("Login.Alert.Title.Success", alternate: "Success"),
+                              message: Localization.get("Login.Alert.Message.Success", alternate: "Welcome to Social Bank"))
+                } else {
+                    self?.showAlert(with: Localization.get("Login.Alert.Title.Failure", alternate: "Failure"),
+                                    message: Localization.get("Login.Alert.Message.Failure", alternate: "Wrong Credentials"))
+                }
+            }.catch { [weak self] error in
+                self?.showAlert(with: Localization.get("Login.Alert.Title.Error", alternate: "Error"),
+                                message: Localization.get("Login.Alert.Message.Failure", alternate: "Error Occurred \n"),
+                                error: error)
         }
         
     }
@@ -52,4 +67,24 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+
+extension LoginViewController {
+    
+    func showAlert(with title: String?, message: String?, error: Error? = nil) {
+        var summary: String? = message
+        
+        if let error = error as? LoginError {
+            if summary != nil {
+                summary! += error.rawValue
+            } else {
+                summary = error.rawValue
+            }
+        }
+        
+        let alertController = UIAlertController.init(title: title, message: summary, preferredStyle: .alert)
+        alertController.addAction(.init(title: Localization.get("Login.Alert.Done", alternate: "Done"), style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }
