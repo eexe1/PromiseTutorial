@@ -26,14 +26,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func submitForm(_ sender: Any) {
-        
+        // Promise handlers are released when a promise is resolved. Therefore, the captured self is also released.
+        // using weak is only to prevent the case where user already exits the screen and there is no need to do any validation further.
         firstly {
                 Promise<Bool> { resolver in
                     let hasValue = (self.emailField.text?.count != 0 && self.pwdField.text?.count != 0)
                     resolver.fulfill(hasValue)
                 }
-            }.then { [unowned self] hasValue -> Promise<Bool> in
-                if hasValue {
+            }.then { [weak self] hasValue -> Promise<Bool> in
+                if hasValue, let self = self {
                     return self.viewModel.validate(self.emailField.text, self.pwdField.text)
                 } else {
                     return Promise<Bool> {
